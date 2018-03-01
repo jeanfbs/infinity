@@ -1,6 +1,7 @@
 
 
 body {
+  font-size: 1.25rem;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -21,8 +22,8 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 header.masthead h1 {
@@ -55,26 +56,9 @@ header.masthead h1 {
 }
 
 .features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
-
-.features-icons .features-icons-item {
-  max-width: 20rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
-}
-
-.features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 5rem;
-}
-
 .testimonials {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -123,8 +107,13 @@ footer.footer {
   color:#bfa7c9;
   font-size: 40px;
 }
-.bg-light{
+.nav-light{
   height: 85px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.bg-light{
   border-bottom: 1px solid #eee;
 }
 .navbar-brand{
@@ -146,3 +135,36 @@ footer.footer {
   background-color: #8E32B5; 
   border-color: #8940A8; 
 } 
+
+.description{
+  font-size: 16px;
+}
+.circle{
+  border-radius: 50%;
+  padding: 10px 25px;
+  border: 3px solid #6c757d;
+}
+
+#showcase-2{
+  background-image: url('../img/bg-showcase-2.jpg');
+}
+
+#showcase-3{
+  background-image: url('../img/bg-showcase-3.jpg');
+}
+#faixa{
+  top:55px;
+}
+.line{
+  margin-top:15px;
+  background: #007bff;
+  height: 3px;
+  content:"";
+}
+#iconTop{
+  position: absolute;
+  text-align: center;
+  padding:2px 5px;
+  margin-left: 47.5%; 
+  background: #fff;
+}
