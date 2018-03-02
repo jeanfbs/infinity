@@ -24,14 +24,34 @@
 
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-light nav-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Infinity Tecnologia</a>
+    <nav class="navbar navbar-expand-lg navbar-light nav-light">
+      <a class="navbar-brand" href="#">Infinity Tecnologia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Cookye <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vantages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <i class="fas fa-phone fa-fw text-muted" id="phoneIcon"></i>
+            <div class="contact text-muted">
+              <small class="small">Fale Conosco</small>
+              <span class="phone">0000-0000</span>
+              <small class="small">Segunda a Sexta, 9 às 19 h</small>
+            </div>
+        </span>
       </div>
     </nav>
-    <br><br><br>
-    <div class="row fixed-top" id="faixa">
+    <div class="row" id="faixa">
         <div class="col-md-12 line"></div>
         <img src="img/logo.png" id="iconTop">
     </div>
@@ -41,7 +61,7 @@
       <div class="container">
         <div class="row">
             <div class="col-md-7">
-              <img src="img/infinity-macbook.png" alt="Cookye" max-width="120%" width="120%">
+              <img class="img-fluid mx-auto" src="img/infinity-macbook.png" alt="Cookye">
             </div>
             <div class="col-md-5 text-right">
               <h1 class="huge-1 cookye-title">Cookye</h1>
@@ -195,6 +215,7 @@
                 <a href="#">Politica de Privacidade</a>
               </li>
             </ul>
+            <p class="text-muted small mb-4 mb-md-0">&copy;Infinity Tecnologia 2018. Todos os direitos reservados.</p>
           </div>
           <div class="col-md-4 h-100 text-center text-md-right my-auto">
             <ul class="list-inline mb-0">
@@ -207,7 +228,7 @@
           </div>
         </div>
       </div>
-      <p class="text-muted text-center small mb-4 mb-md-0">&copy;Infinity Tecnologia 2018. Todos os direitos reservados.</p>
+      
     </footer>
 
     <!-- Bootstrap core JavaScript -->

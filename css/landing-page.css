@@ -108,8 +108,6 @@ footer.footer {
   font-size: 40px;
 }
 .nav-light{
-  height: 85px;
-  border-bottom: 1px solid #eee;
   background: #fff;
 }
 
@@ -156,7 +154,8 @@ footer.footer {
   top:55px;
 }
 .line{
-  margin-top:15px;
+  margin-top:13px;
+  margin-bottom:5px;
   background: #007bff;
   height: 3px;
   content:"";
@@ -164,7 +163,34 @@ footer.footer {
 #iconTop{
   position: absolute;
   text-align: center;
+  
   padding:2px 5px;
-  margin-left: 47.5%; 
+  margin-left: 48.3%; 
   background: #fff;
+}
+#phoneIcon{
+  position: relative;
+  float: left;
+}
+.contact{
+  margin-top: -20px;
+  padding: 5px;
+  text-align: center;
+}
+.small{
+  font-size: 12px;
+  margin: -3px 0;
+  padding: 0;
+  display: block;
+}
+.phone{
+  color: #007bff;
+}
+
+
+
+@media(max-width: 765px){
+  .navbar-text{
+    width: 100%;
+  }
 }
