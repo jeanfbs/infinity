@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-  <title>Infinity Tecnologia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>React - Bootstrap Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <!-- stylesheets -->
-  <link href="font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
 
   <!-- javascript -->
   <script src="dist/theme.min.js"></script>
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 <body>
-  <div class="navbar navbar-dark bg-transparent navbar-expand-lg" role="banner">
-    <div class="container no-override">
+  <div class="navbar navbar-dark navbar-expand-lg" role="banner">
+    <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo-light.png" class="mr-2 img-fluid" />
-        Infinity
+        React
       </a>
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
@@ -46,7 +44,7 @@
               <a class="dropdown-item" href="index3.html">Home 3 (Off-canvas menu)</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
               Showcase
               <i class="ion-chevron-down"></i>
@@ -149,195 +147,153 @@
     </div>
   </div>
 
-  <div class="index-hero">
+  <div class="services-intro">
     <div class="container">
-      <h1 class="hero-text cookye-text customFadeInDown">
-            Cookye
-      </h1>
-      <h1 class="hero-text customFadeInDown">
-        A solução ideal para seu negócio!
-      </h1>
-      <p class="sub-text customFadeInDown">
-        Se preocupe apenas com seus resultados, deixe o restante conosco. <br>
-        Um software desenvolvido com a mesma simplicidade de seu négocio
-      </p>
-      <div class="cta customFadeInDown">
-        <a href="signup.html" class="btn-shadow btn-shadow-cookye btn-shadow-lg">Saiba Mais</a>
-      </div>
-      <img src="images/index-device.png" class="device d-none d-lg-block">
-    </div>
-  </div>
-
-  <div class="features-section">
-    <div class="container">
-      <div class="header text-center">
-        <h2>Gerencie seu negócio de forma mais eficiente</h2>
-        <p class="mt-3">A Infinity oferece as tecnologias mais modernas para alavancar seus resultados</p>
-      </div>
-      <br>
-      <br>
-      <div class="row text-center">
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-dollar-sign fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Financeiro</h4>
-              <p class="lead">Gerencie o financeiro de seu negócio de forma fácil, simplificada e com acompanhamento
-                Semanal, Mensal, Trimestral.
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                <i class="fas fa-utensils fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Cardápio</h4>
-              <p class="lead">
-                  Criamos um avançado controle e gestão de cardápio que suporta diferentes tipos de refeições.
-                  Crie cardápios de comida Japonesa, Massas, Prato Feito, Jantinha, Pizzas, Açaí, dentre outros...
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-paper-plane fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Pedidos</h4>
-              <p class="lead">
-                Com o mais completo controle de pedidos, você consegue acompanhar desde o início até o pagamento.
-                Monitore seus pedidos realizados pelo aplicativo.
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-boxes fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Estoque</h4>
-              <p class="lead">
-                Nós te ajudamos a controlar seu estoque, conte com o recurso
-                <strong style="font-weight:600;">Controle Automático de Estoque</strong> para monitorar seus estoque
-                em tempo real.
-              </p>
-          </div>
+      <div class="row" style="overflow:hidden;">
+        <div class="col-md-6 image">
+          <img src="images/services1.png" class="img-fluid animated fadeInUp" alt="services1" />
         </div>
+        <div class="col-md-6 info">
+          <h3>Here is everything we offer</h3>
+          <p>
+            You will find a variety of ways to present your services such as grids and lists.
+          </p>
+          <p>
+            We plan to update this product with more pages and features as we keep on going.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="pricing-dark-section">
+  <div class="services-tabs">
     <div class="container">
-      <div class="header text-center">
-        <h3>Free trial. No contract. Cancel when you want.</h3>
-        <p>All plans include a 7-day free trial</p>
+      <nav class="nav nav-tabs justify-content-around">
+        <a class="nav-link active" data-toggle="tab" href="#tab-web">
+          <span class="icon brankic-monitor"></span>
+        </a>
+        <a class="nav-link" data-toggle="tab" href="#tab-front">
+          <span class="icon brankic-phone"></span>
+        </a>
+        <a class="nav-link" data-toggle="tab" href="#tab-responsive">
+          <span class="icon brankic-lamp3"></span>
+        </a>
+        <a class="nav-link" data-toggle="tab" href="#tab-html">
+          <span class="icon brankic-pictures3"></span>
+        </a>
+        <a class="nav-link" data-toggle="tab" href="#tab-ps">
+          <span class="icon brankic-upload2"></span>
+        </a>
+        <a class="nav-link" data-toggle="tab" href="#tab-retina">
+          <span class="icon brankic-tools"></span>
+        </a>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab-web">
+          <h4>Web Development</h4>
+          <p>
+            Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe some features or anything you want - React has a complete solution for you.
+          </p>
+          <p>
+            Chances are, unless I’m a designer, I don’t know what I want. All I know is I want something functional that looks good, is comparable with my competitors, and features constant colour schemes for branding.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tab-front">
+          <h4>Frontend development</h4>
+          <p>
+            I love making the stuff, that’s sort of the core of it. I love creating the stuff. It’s so satisfying to get from the beginning to the end, from a shaky nothing idea to something that’s well formed and the audience really likes. It’s like a drug: You keep trying to do it again and again and again. I’ve learned from experience that if you work harder at it, and apply more energy and time to it, and more consistency, you get a better result. It comes from the work.
+            <br />
+            This thing will work on any device, it has a very easy to understand documentation and is made with SASS.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tab-responsive">
+          <h4>Responsive web design</h4>
+          <p>
+            We're always happy to offer support if you happen to have any doubts about anything, if you need some new stuff contact us.
+          </p>
+          <p>
+            You have to roll up your sleeves and be a stonecutter before you can become a sculptor – command of craft always precedes art: apprentice, journeyman, master. <br />
+            It doesn’t matter one damn bit whether fashion is art or not. You don’t question whether an incredible chef is an artist or not – his cakes are delicious and that’s all that matters.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tab-html">
+          <h4>HTML & CSS Development</h4>
+          <p>
+            Well you’re in your little room and you’re working on something good but if it’s really good you’re gonna need a bigger room and when you’re in the bigger room you might not know what to do you might have to think of how you got started sitting in your little room.
+          </p>
+          <p>
+            We're always happy to offer support if you happen to have any doubts about anything, if you need some new stuff contact us.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tab-ps">
+          <h4>Photoshop Mockups</h4>
+          <p>
+            I want everything we do to be beautiful. I don’t give a damn whether the client understands that that’s worth anything, or that the client thinks it’s worth anything, or whether it is worth anything. It’s worth it to me. It’s the way I want to live my life. I want to make beautiful things, even if nobody cares.
+          </p>
+          <p>
+            We'll be adding some new stuff to make it even more awesome, if you have any idea please let us know.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="tab-retina">
+          <h4>Retina display</h4>
+          <p>
+            Functionality is so over-valued in design, and we’ve kept design very small in that way. Functionality is the sheer minimum. If your house burns down, what do you take? The cat in the window that you got from your mother, or the chair you have?
+          </p>
+          <p>
+            Simply are looking to sell digital goods or are interested in drop shipping — React has a complete solution in this.
+          </p>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <div class="charts">
+  <div class="services-grid-section services-grid-section--border">
+    <div class="container">
+      <div class="header">
+        <h3>Need an easy way to customize your site?</h3>
+        <p>
+          React is perfect for novice developers and experts alike.
+        </p>
+      </div>
+      <div class="services">
         <div class="row">
           <div class="col-md-4">
-            <div class="chart">
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">29</span>
-                <span class="period">/month</span>
+            <div class="service">
+              <div class="pic">
+                <img src="images/services2.png" class="img-fluid" alt="services1" />
               </div>
-              <div class="plan-name">Freelance</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">5</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">10</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">1.0%</span>
-                  Transaction fee
-                </div>
+              <div class="info">
+                <strong>Get notifications instantly</strong>
+                <p>
+                  You can work with international customers right out of the box while staying in your country.
+                </p>
               </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="chart chart--featured">
-              <div class="popular">Most popular</div>
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">79</span>
-                <span class="period">/month</span>
+            <div class="service">
+              <div class="pic">
+                <img src="images/services4.png" class="img-fluid" alt="services2" />
               </div>
-              <div class="plan-name">Profesional</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">15</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">15</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">0.5%</span>
-                  Transaction fee
-                </div>
+              <div class="info">
+                <strong>Insights & Reports</strong>
+                <p>
+                  You can work with international customers right out of the box while staying in your country.
+                </p>
               </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="chart">
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">119</span>
-                <span class="period">/month</span>
+            <div class="service">
+              <div class="pic">
+                <img src="images/services3.png" class="img-fluid" alt="services3" />
               </div>
-              <div class="plan-name">Premium</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">Unlimited</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">25</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">No</span>
-                  Transaction fee
-                </div>
+              <div class="info">
+                <strong>Location Services</strong>
+                <p>
+                  You can work with international customers right out of the box while staying in your country.
+                </p>
               </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
             </div>
           </div>
         </div>
@@ -345,70 +301,82 @@
     </div>
   </div>
 
-  <div class="slider-section">
+  <div class="services-showcase-section">
     <div class="container">
-      <h3 class="header">Includes all pages that a complete theme should have</h3>
-
-      <div class="slide-wrapper">
-        <div class="slideshow">
-          <div class="btn-nav prev"></div>
-          <div class="btn-nav next"></div>
-          <div class="slide active">
-            <img src="images/slider/slide3.png" alt="slide3" />
+      <div class="header">
+        <h3>Flexibility Built In</h3>
+        <p>
+          You can work with international customers right out of the box while staying in your country.
+        </p>
+      </div>
+      <div class="services">
+        <div class="row">
+          <div class="col-md-6 service">
+            <img src="images/circle-icons/full-color/globe.png" alt="globe" />
+            <div class="info">
+              <strong>Act locally, work globally</strong>
+              <p>You can work with international customers right out of the box while staying in your country.</p>
+            </div>
           </div>
-          <div class="slide">
-            <img src="images/slider/slide4.png" alt="slide4" />
+          <div class="col-md-6 service">
+            <img src="images/circle-icons/full-color/location.png" alt="location" />
+            <div class="info">
+              <strong>Act globally, work as usual</strong>
+              <p>With some customization you can make this product apply to your branding guidelines and amaze your customers at the same time.</p>
+            </div>
           </div>
-          <div class="slide">
-            <img src="images/slider/slide1.png" alt="slide1" />
+        </div>
+        <div class="row">
+          <div class="col-md-6 service">
+            <img src="images/circle-icons/full-color/smartphone.png" alt="smartphone" />
+            <div class="info">
+              <strong>Act globally, work as usual</strong>
+              <p>We don't impose any design restrictions, you are free to customize it as you see fit and it's easy to use.</p>
+            </div>
           </div>
-          <div class="slide">
-            <img src="images/slider/slide5.png" alt="slide5" />
-          </div>
-          <div class="slide">
-            <img src="images/slider/slide2.png" alt="slide2" />
+          <div class="col-md-6 service">
+            <img src="images/circle-icons/full-color/support.png" alt="support" />
+            <div class="info">
+              <strong>Develop once, run everywhere</strong>
+              <p>We'll be adding some new stuff to make it even more awesome, if you have any idea please let us know.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="testimonials-section">
+  <div class="features-hover-section">
     <div class="container">
-      <h3 class="header">
-        Trusted by a lot businesses around the world:
-      </h3>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="testimonial">
-            <div class="quote">
-              I am just quoting some stuff but I am seriously happy about this product. Has a lot of powerful
-              features and is so easy to set up, I could stay customizing it day and night, it's just so much fun!
-              <div class="arrow-down">
-                <div class="arrow"></div>
-                <div class="arrow-border"></div>
-              </div>
-            </div>
-            <div class="author">
-              <img src="images/testimonials/testimonial3.jpg" class="pic" alt="testimonial3" />
-              <div class="name">John McClane</div>
-              <div class="company">Microsoft</div>
+      <div class="images">
+        <img src="images/services5.png" class="img-fluid active" alt="services1" />
+        <img src="images/services6.png" class="img-fluid" alt="services2" />
+        <img src="images/services7.png" class="img-fluid" alt="services3" />
+      </div>
+      <div class="features">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature active">
+              <strong>Your own dashboard</strong>
+              <p>
+                You can work with international customers right out of the box while you can keep staying in your country.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial">
-            <div class="quote">
-              This thing is one of those tools that everybody should be using. I really like it and with this ease to use, you can kickstart your projects and apps and just focus on your business!
-              <div class="arrow-down">
-                <div class="arrow"></div>
-                <div class="arrow-border"></div>
-              </div>
+          <div class="col-md-4">
+            <div class="feature">
+              <strong>Showcase your landing page</strong>
+              <p>
+                You can work with international customers right out of the box while you can keep staying in your country.
+              </p>
             </div>
-            <div class="author">
-              <img src="images/testimonials/testimonial2.jpg" class="pic" alt="testimonial2" />
-              <div class="name">Carl Jones</div>
-              <div class="company">Pixar Co.</div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature">
+              <strong>Offer pricing plans</strong>
+              <p>
+                You can work with international customers right out of the box while you can keep staying in your country.
+              </p>
             </div>
           </div>
         </div>
@@ -416,32 +384,16 @@
     </div>
   </div>
 
-  <div class="cta-section">
-    <p>
-      Start your free 14 day trial! 
-    </p>
-    <a href="signup.html">
-      Sign up for free
-    </a>
-  </div>
-
-  <div class="clients-section">
+  <div class="signup-cta">
     <div class="container">
-      <h3>Our Customers</h3>
-      <p>
-        These are some of our customers who have helped us by using our product.
-      </p>
-      <div class="logos">
-        <img src="images/logos/google.png">
-        <img src="images/logos/facebook.png">
-        <img src="images/logos/apple.png">
-        <img src="images/logos/stripe.png">
-        <img src="images/logos/yahoo.png">
+      <div class="wrapper clearfix">
+        <h4>Try React now and take template design to a whole new level</h4>
+        <a href="#" class="btn-shadow btn-shadow-info btn-shadow-lg mt-4">Sign up free</a>
       </div>
     </div>
   </div>
 
-  <div class="footer footer--light">
+  <div class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-3 menu">

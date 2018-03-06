@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-  <title>Infinity Tecnologia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>React - Bootstrap Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <!-- stylesheets -->
-  <link href="font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
 
   <!-- javascript -->
@@ -22,11 +20,11 @@
   <![endif]-->
 </head>
 <body>
-  <div class="navbar navbar-dark bg-transparent navbar-expand-lg" role="banner">
-    <div class="container no-override">
+  <div class="navbar navbar-dark navbar-expand-lg" role="banner">
+    <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo-light.png" class="mr-2 img-fluid" />
-        Infinity
+        React
       </a>
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
@@ -56,7 +54,7 @@
               <a class="dropdown-item" href="services.html">Services</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
               Pricing
               <i class="ion-chevron-down"></i>
@@ -149,299 +147,281 @@
     </div>
   </div>
 
-  <div class="index-hero">
+  <div class="pricing-tabs-section">
     <div class="container">
-      <h1 class="hero-text cookye-text customFadeInDown">
-            Cookye
-      </h1>
-      <h1 class="hero-text customFadeInDown">
-        A solução ideal para seu negócio!
-      </h1>
-      <p class="sub-text customFadeInDown">
-        Se preocupe apenas com seus resultados, deixe o restante conosco. <br>
-        Um software desenvolvido com a mesma simplicidade de seu négocio
-      </p>
-      <div class="cta customFadeInDown">
-        <a href="signup.html" class="btn-shadow btn-shadow-cookye btn-shadow-lg">Saiba Mais</a>
+      <div class="header">
+        <h3>Different pricing charts</h3>
+        <p>For some cases that you might also need</p>
       </div>
-      <img src="images/index-device.png" class="device d-none d-lg-block">
-    </div>
-  </div>
 
-  <div class="features-section">
-    <div class="container">
-      <div class="header text-center">
-        <h2>Gerencie seu negócio de forma mais eficiente</h2>
-        <p class="mt-3">A Infinity oferece as tecnologias mais modernas para alavancar seus resultados</p>
-      </div>
-      <br>
-      <br>
-      <div class="row text-center">
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-dollar-sign fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Financeiro</h4>
-              <p class="lead">Gerencie o financeiro de seu negócio de forma fácil, simplificada e com acompanhamento
-                Semanal, Mensal, Trimestral.
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                <i class="fas fa-utensils fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Cardápio</h4>
-              <p class="lead">
-                  Criamos um avançado controle e gestão de cardápio que suporta diferentes tipos de refeições.
-                  Crie cardápios de comida Japonesa, Massas, Prato Feito, Jantinha, Pizzas, Açaí, dentre outros...
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-paper-plane fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Pedidos</h4>
-              <p class="lead">
-                Com o mais completo controle de pedidos, você consegue acompanhar desde o início até o pagamento.
-                Monitore seus pedidos realizados pelo aplicativo.
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-boxes fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Estoque</h4>
-              <p class="lead">
-                Nós te ajudamos a controlar seu estoque, conte com o recurso
-                <strong style="font-weight:600;">Controle Automático de Estoque</strong> para monitorar seus estoque
-                em tempo real.
-              </p>
-          </div>
+      <div class="tabs">
+        <div class="tab monthly active">
+          <span>Pay Monthly</span>
         </div>
-    </div>
-  </div>
-
-  <div class="pricing-dark-section">
-    <div class="container">
-      <div class="header text-center">
-        <h3>Free trial. No contract. Cancel when you want.</h3>
-        <p>All plans include a 7-day free trial</p>
+        <div class="tab anually">
+          <span>
+            Pay anually
+            <small>20% off</small>
+          </span>
+        </div>
       </div>
-
-      <div class="charts">
+      <div class="plans">
         <div class="row">
-          <div class="col-md-4">
-            <div class="chart">
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">29</span>
-                <span class="period">/month</span>
+          <div class="plan col-md-4">
+            <div class="header">
+              <span class="icon entypo-user"></span>
+              Solo Plan
+              <div class="price" data-monthly="$15/mo" data-anually="$150/y">
+                $15/mo
               </div>
-              <div class="plan-name">Freelance</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">5</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">10</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">1.0%</span>
-                  Transaction fee
-                </div>
+            </div>
+            <div class="specs">
+              <div class="spec">
+                <span class="variable">1</span> team member
               </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
+              <div class="spec">
+                <span class="variable">Digital</span> recurring billing
+              </div>
+              <div class="spec">
+                <span class="variable">Virtual</span> online terminal
+              </div>
+              <div class="spec">
+                <span class="variable">100</span> total products
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="chart chart--featured">
-              <div class="popular">Most popular</div>
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">79</span>
-                <span class="period">/month</span>
+          <div class="plan col-md-4 middle">
+            <div class="header">
+              <span class="icon entypo-users"></span>
+              Team Plan
+              <div class="price" data-monthly="$49/mo" data-anually="$550/y">
+                $49/mo
               </div>
-              <div class="plan-name">Profesional</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">15</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">15</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">0.5%</span>
-                  Transaction fee
-                </div>
+            </div>
+            <div class="specs">
+              <div class="spec">
+                <span class="variable">20</span> team members
               </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
+              <div class="spec">
+                <span class="variable">Digital</span> recurring billing
+              </div>
+              <div class="spec">
+                <span class="variable">Virtual</span> online terminal
+              </div>
+              <div class="spec">
+                <span class="variable">225</span> total products
+              </div>
+              <div class="spec">
+                <span class="variable">Virtual</span> ssh keys
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="chart">
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">119</span>
-                <span class="period">/month</span>
+          <div class="plan col-md-4">
+            <div class="header">
+              <span class="icon entypo-suitcase"></span>
+              Agency Plan
+              <div class="price" data-monthly="$99/mo" data-anually="$1,100/y">
+                $15/mo
               </div>
-              <div class="plan-name">Premium</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">Unlimited</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">25</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">No</span>
-                  Transaction fee
-                </div>
+            </div>
+            <div class="specs">
+              <div class="spec">
+                <span class="variable">Unlimited</span> team members
               </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
+              <div class="spec">
+                <span class="variable">Digital</span> recurring billing
+              </div>
+              <div class="spec">
+                <span class="variable">Virtual</span> online terminal
+              </div>
+              <div class="spec">
+                <span class="variable">Unlimited</span> total products
+              </div>
+              <div class="spec">
+                <span class="variable">Virtual</span> ssh keys
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="signup">
+        <a href="signup.html" class="btn-shadow btn-shadow-success btn-shadow-lg">
+          Start your unlimited trial for 30 days
+        </a>
+        <div class="message">
+          30-day money-back guarantee that starts after your first payment.
         </div>
       </div>
     </div>
   </div>
 
-  <div class="slider-section">
+  <div class="pricing-comparison-section">
     <div class="container">
-      <h3 class="header">Includes all pages that a complete theme should have</h3>
+      <div class="divider"></div>
 
-      <div class="slide-wrapper">
-        <div class="slideshow">
-          <div class="btn-nav prev"></div>
-          <div class="btn-nav next"></div>
-          <div class="slide active">
-            <img src="images/slider/slide3.png" alt="slide3" />
+      <div class="main-header">
+        <h3>Comparison charts</h3>
+        <p>
+          When you need to compare your plans or competitors
+        </p>
+      </div>
+
+      <div class="chart clearfix d-flex align-items-stretch">
+        <div class="features-col">
+          <div class="header">                
+            Features
           </div>
-          <div class="slide">
-            <img src="images/slider/slide4.png" alt="slide4" />
+          <div class="spec">
+            <span class="icon brankic-calendar2"></span>
+            Sync across all your devices
           </div>
-          <div class="slide">
-            <img src="images/slider/slide1.png" alt="slide1" />
+          <div class="spec">
+            <span class="icon brankic-loop"></span>
+            Recurring Billing
           </div>
-          <div class="slide">
-            <img src="images/slider/slide5.png" alt="slide5" />
+          <div class="spec">
+            <span class="icon brankic-phone"></span>
+            Online terminal included
           </div>
-          <div class="slide">
-            <img src="images/slider/slide2.png" alt="slide2" />
+          <div class="spec">
+            <span class="icon brankic-locked"></span>
+            Complete products catalog
+          </div>
+          <div class="spec">
+            <span class="icon brankic-key"></span>
+            Deployment with ssh keys
+          </div>
+          <div class="spec">
+            <span class="icon brankic-pictures3"></span>
+            Add files and photos from email
+          </div>
+          <div class="spec last">
+            <span class="icon brankic-envelope"></span>
+            Get daily email notifications
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="plan-col d-flex flex-column">
+          <div class="header">
+            Solo Plan
+            <div class="price">
+              $15/mo
+            </div>
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
 
-  <div class="testimonials-section">
-    <div class="container">
-      <h3 class="header">
-        Trusted by a lot businesses around the world:
-      </h3>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="testimonial">
-            <div class="quote">
-              I am just quoting some stuff but I am seriously happy about this product. Has a lot of powerful
-              features and is so easy to set up, I could stay customizing it day and night, it's just so much fun!
-              <div class="arrow-down">
-                <div class="arrow"></div>
-                <div class="arrow-border"></div>
+          <a href="signup.html" class="btn-shadow btn-shadow-success align-self-center mt-auto">Sign up free</a>
+        </div>
+        <div class="plan-col d-flex flex-column">
+          <div class="header">
+            Team Plan
+            <div class="price">
+              $49/mo
+            </div>
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+
+          <a href="signup.html" class="btn-shadow btn-shadow-success align-self-center mt-auto">Sign up free</a>
+        </div>
+        <div class="plan-col d-flex flex-column">
+          <div class="header">
+            Agency Plan
+            <div class="price">
+              $119/mo
+            </div>
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+          <div class="spec mb-5">
+            <img src="images/checkmark.png" class="check" alt="checkmark" />
+          </div>
+
+          <a href="signup.html" class="btn-shadow btn-shadow-success align-self-center mt-auto">Sign up free</a>
+        </div>
+      </div>
+      
+      <div class="message">
+        All of our plans come with a 30 day trial with no credit card required, we also offer a <a href="signup.html">free plan</a>.
+      </div>
+
+      <div class="faq">
+        <div class="header">
+          <h3>Frequently Asked Questions</h3>
+        </div>
+        <div class="questions">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="question">
+                <strong>Do I need a card to signup?</strong>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the randomised words which don’t look even slightly believable. If you are anything embarrassing hidden in the middle of text.
+                </p>
+              </div>
+              <div class="question">
+                <strong>Can I cancel at anytime?</strong>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the randomised words which don’t look even slightly believable. If you are anything embarrassing hidden in the middle of text.
+                </p>
               </div>
             </div>
-            <div class="author">
-              <img src="images/testimonials/testimonial3.jpg" class="pic" alt="testimonial3" />
-              <div class="name">John McClane</div>
-              <div class="company">Microsoft</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial">
-            <div class="quote">
-              This thing is one of those tools that everybody should be using. I really like it and with this ease to use, you can kickstart your projects and apps and just focus on your business!
-              <div class="arrow-down">
-                <div class="arrow"></div>
-                <div class="arrow-border"></div>
+            <div class="col-md-6">
+              <div class="question">
+                <strong>Can I cancel at anytime?</strong>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the randomised words which don’t look even slightly believable. If you are anything embarrassing hidden in the middle of text.
+                </p>
+              </div>
+              <div class="question">
+                <strong>Do I need a card to signup?</strong>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the randomised words which don’t look even slightly believable. If you are anything embarrassing hidden in the middle of text.
+                </p>
               </div>
             </div>
-            <div class="author">
-              <img src="images/testimonials/testimonial2.jpg" class="pic" alt="testimonial2" />
-              <div class="name">Carl Jones</div>
-              <div class="company">Pixar Co.</div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="cta-section">
-    <p>
-      Start your free 14 day trial! 
-    </p>
-    <a href="signup.html">
-      Sign up for free
-    </a>
-  </div>
-
-  <div class="clients-section">
-    <div class="container">
-      <h3>Our Customers</h3>
-      <p>
-        These are some of our customers who have helped us by using our product.
-      </p>
-      <div class="logos">
-        <img src="images/logos/google.png">
-        <img src="images/logos/facebook.png">
-        <img src="images/logos/apple.png">
-        <img src="images/logos/stripe.png">
-        <img src="images/logos/yahoo.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="footer footer--light">
+  <div class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-3 menu">
@@ -527,5 +507,22 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    $(function () {
+      // enables the pricing tabs
+      $tabs = $(".pricing-tabs-section .tab");
+      $prices = $(".pricing-tabs-section .price");
+
+      $tabs.click(function () {
+        $tabs.removeClass("active");
+        $(this).addClass("active");
+        var dataPrice = $(this).hasClass("monthly") ? "monthly" : "anually";
+        $prices.each(function (index, el) {
+          $(el).html($(el).data(dataPrice));
+        });
+      });
+    });
+  </script>
 </body>
 </html>

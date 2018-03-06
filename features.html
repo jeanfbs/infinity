@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-  <title>Infinity Tecnologia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>React - Bootstrap Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <!-- stylesheets -->
-  <link href="font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
 
   <!-- javascript -->
@@ -22,11 +20,11 @@
   <![endif]-->
 </head>
 <body>
-  <div class="navbar navbar-dark bg-transparent navbar-expand-lg" role="banner">
-    <div class="container no-override">
+  <div class="navbar navbar-dark navbar-expand-lg" role="banner">
+    <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo-light.png" class="mr-2 img-fluid" />
-        Infinity
+        React
       </a>
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
@@ -46,7 +44,7 @@
               <a class="dropdown-item" href="index3.html">Home 3 (Off-canvas menu)</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
               Showcase
               <i class="ion-chevron-down"></i>
@@ -149,197 +147,194 @@
     </div>
   </div>
 
-  <div class="index-hero">
+  <div class="features-tabs-section" style="margin-top: 100px;">
     <div class="container">
-      <h1 class="hero-text cookye-text customFadeInDown">
-            Cookye
-      </h1>
-      <h1 class="hero-text customFadeInDown">
-        A solução ideal para seu negócio!
-      </h1>
-      <p class="sub-text customFadeInDown">
-        Se preocupe apenas com seus resultados, deixe o restante conosco. <br>
-        Um software desenvolvido com a mesma simplicidade de seu négocio
-      </p>
-      <div class="cta customFadeInDown">
-        <a href="signup.html" class="btn-shadow btn-shadow-cookye btn-shadow-lg">Saiba Mais</a>
+      <div class="header">
+        <h3>Accomplish more with React</h3>
+        <p>Choose your favorite formats for your own sites</p>
       </div>
-      <img src="images/index-device.png" class="device d-none d-lg-block">
+
+      <div class="tabs-wrapper">
+        <ul class="nav nav-tabs justify-content-center" id="feature-tabs">
+          <li>
+            <a href="#home" class="active" data-toggle="tab">Upstart your development</a>
+          </li>
+          <li>
+            <a href="#profile" data-toggle="tab">Get ready in half the time</a>
+          </li>
+          <li>
+            <a href="#messages" data-toggle="tab">Collaborate with everyone</a>
+          </li>
+          <li>
+            <a href="#settings" data-toggle="tab">Get more done faster</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="home">
+            <div class="row">
+              <div class="col-lg-6 order-lg-2 image">
+                <img src="images/portfolioitem1.png" class="img-fluid" alt="pic2" />
+              </div>
+              <div class="col-lg-6 order-lg-1 info">
+                <h4>You don't need to have any advanced technical</h4>
+                <p>
+                  Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe some features or anything you want - React has a complete solution for you.
+                </p>
+                <p>
+                  You have complete control over the look & feel of your website, we offer the best quality so you take your site up and running in no time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile">
+            <div class="row">
+              <div class="col-lg-6 image">
+                <img src="images/tabs/pic1.png" class="img-fluid" alt="pic1" />
+              </div>
+              <div class="col-lg-6 info">
+                <h4>You don't need to have any advanced technical</h4>
+                <p>
+                  Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe some features or anything you want - React has a complete solution for you.
+                </p>
+                <p>
+                  You have complete control over the look & feel of your website, we offer the best quality so you take your site up and running in no time.
+                </p>
+              </div>
+            </div>        
+          </div>
+          <div class="tab-pane fade" id="messages">
+            <div class="row">
+              <div class="col-lg-6 order-lg-2 image">
+                <img src="images/tabs/pic2.png" class="img-fluid" alt="pic3" />
+              </div>
+              <div class="col-lg-6 order-lg-1 info">
+                <h4>You don't need to have any advanced technical</h4>
+                <p>
+                  Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe some features or anything you want - React has a complete solution for you.
+                </p>
+                <p>
+                  You have complete control over the look & feel of your website, we offer the best quality so you take your site up and running in no time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="settings">
+            <div class="row">
+              <div class="col-lg-6 image">
+                <img src="images/tabs/pic1.png" class="img-fluid" alt="pic4" />
+              </div>
+              <div class="col-lg-6 info">
+                <h4>You don't need to have any advanced technical</h4>
+                <p>
+                  Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe some features or anything you want - React has a complete solution for you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="features-section">
     <div class="container">
       <div class="header text-center">
-        <h2>Gerencie seu negócio de forma mais eficiente</h2>
-        <p class="mt-3">A Infinity oferece as tecnologias mais modernas para alavancar seus resultados</p>
+        <h2>Need an easy way to customize your site?</h2>
+        <p class="mt-3">React is perfect for novice developers and experts alike.</p>
       </div>
-      <br>
-      <br>
-      <div class="row text-center">
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-dollar-sign fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Financeiro</h4>
-              <p class="lead">Gerencie o financeiro de seu negócio de forma fácil, simplificada e com acompanhamento
-                Semanal, Mensal, Trimestral.
+      <div class="feature">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info">
+              <h4 class="mt-lg-5">You don't need to have great technical experience to use your product.</h4>
+              <p>
+                Whether you want to fill this paragraph with some text like I'm doing right now, this place
+                is perfect to describe some features or anything you want - React has a complete solution for you.
               </p>
+            </div>
           </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                <i class="fas fa-utensils fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Cardápio</h4>
-              <p class="lead">
-                  Criamos um avançado controle e gestão de cardápio que suporta diferentes tipos de refeições.
-                  Crie cardápios de comida Japonesa, Massas, Prato Feito, Jantinha, Pizzas, Açaí, dentre outros...
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-paper-plane fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Pedidos</h4>
-              <p class="lead">
-                Com o mais completo controle de pedidos, você consegue acompanhar desde o início até o pagamento.
-                Monitore seus pedidos realizados pelo aplicativo.
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-boxes fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Estoque</h4>
-              <p class="lead">
-                Nós te ajudamos a controlar seu estoque, conte com o recurso
-                <strong style="font-weight:600;">Controle Automático de Estoque</strong> para monitorar seus estoque
-                em tempo real.
-              </p>
+          <div class="col-md-6 text-center">
+            <img src="images/feature4.png" class="img-fluid" alt="feature1" />
           </div>
         </div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <div class="row">
+          <div class="col-md-6 order-md-2">
+            <div class="info">
+              <h4 class="mt-lg-4">A fully featured well design template that works.</h4>
+              <p>
+                You have complete control over the look & feel of your website, we offer the best quality so you
+                take your site up and running in no time.
+              </p>
+              <p>
+                Write some text here to explain the features of your site or application, it
+                has lots of uses.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1 text-center">
+            <img src="images/feature2.png" class="img-fluid" alt="feature2" />
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info">
+              <h4 class="mt-lg-5">You don't need to have great technical experience to use your product.</h4>
+              <p>
+                Whether you want to fill this paragraph with some text like I'm doing right now, this place
+                is perfect to describe some features or anything you want - React has a complete solution for you.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="images/feature3.png" class="img-fluid" alt="feature1" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="pricing-dark-section">
+  <div class="features-grid-section">
     <div class="container">
-      <div class="header text-center">
-        <h3>Free trial. No contract. Cancel when you want.</h3>
-        <p>All plans include a 7-day free trial</p>
+      <div class="row">
+        <div class="col-md-4 feature">
+          <img src="images/circle-icons/one-color/creditcard.png" alt="creditcard" />
+          <strong>Act locally, work globally</strong>
+          <p>You can work with international customers right out of the box while you can keep staying in your country.</p>
+        </div>
+        <div class="col-md-4 feature">
+          <img src="images/circle-icons/one-color/dev.png" alt="dev" />
+          <strong>Act globally, work as usual</strong>
+          <p>With some customization you can make this product apply to your branding guidelines and amaze your customers at the same time.</p>
+        </div>
+        <div class="col-md-4 feature">
+          <img src="images/circle-icons/one-color/globe.png" alt="globe" />
+          <strong>Develop once, run everywhere</strong>
+          <p>We don't impose any design restrictions, you are free to customize it as you see fit and it's easy to use.</p>
+        </div>
       </div>
-
-      <div class="charts">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="chart">
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">29</span>
-                <span class="period">/month</span>
-              </div>
-              <div class="plan-name">Freelance</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">5</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">10</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">1.0%</span>
-                  Transaction fee
-                </div>
-              </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="chart chart--featured">
-              <div class="popular">Most popular</div>
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">79</span>
-                <span class="period">/month</span>
-              </div>
-              <div class="plan-name">Profesional</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">15</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">15</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">0.5%</span>
-                  Transaction fee
-                </div>
-              </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="chart">
-              <div class="quantity">
-                <span class="dollar">$</span>
-                <span class="price">119</span>
-                <span class="period">/month</span>
-              </div>
-              <div class="plan-name">Premium</div>
-              <div class="specs">
-                <div class="spec">
-                  <span class="variable">Unlimited</span>
-                  team members
-                </div>
-                <div class="spec">
-                  <span class="variable">Digital</span>
-                  recurring billing
-                </div>
-                <div class="spec">
-                  <span class="variable">Virtual</span>
-                  online terminal
-                </div>
-                <div class="spec">
-                  <span class="variable">25</span>
-                  total products
-                </div>
-                <div class="spec">
-                  <span class="variable">No</span>
-                  Transaction fee
-                </div>
-              </div>
-              <a class="btn-signup button-clear" href="signup.html">
-                <span>Start free trial</span>
-              </a>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-md-4 feature">
+          <img src="images/circle-icons/one-color/support.png" alt="support" />
+          <strong>Act globally, work as usual</strong>
+          <p>We're always happy to offer support if you happen to have any doubts about anything, if you need
+            some new stuff contact us.</p>
+        </div>
+        <div class="col-md-4 feature">
+          <img src="images/circle-icons/one-color/mail.png" alt="mail" />
+          <strong>Develop once, run everywhere</strong>
+          <p>We'll be adding some new stuff to make it even more awesome, if you have any idea please let us know.</p>
+        </div>
+        <div class="col-md-4 feature">
+          <img src="images/circle-icons/one-color/locked.png" alt="locked" />
+          <strong>Act locally, work globally</strong>
+          <p>This thing will work on any device, it has a very easy to understand documentation and is made with SASS.</p>
         </div>
       </div>
     </div>
@@ -373,75 +368,43 @@
     </div>
   </div>
 
-  <div class="testimonials-section">
+  <div class="blog-showcase">
     <div class="container">
-      <h3 class="header">
-        Trusted by a lot businesses around the world:
-      </h3>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="testimonial">
-            <div class="quote">
-              I am just quoting some stuff but I am seriously happy about this product. Has a lot of powerful
-              features and is so easy to set up, I could stay customizing it day and night, it's just so much fun!
-              <div class="arrow-down">
-                <div class="arrow"></div>
-                <div class="arrow-border"></div>
+      <div class="header">
+        <h3>Showcasing some blog posts</h3>
+      </div>
+      <div class="posts">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="pic" href="blogpost.html">
+              <img src="images/blog1.png" class="img-fluid" alt="blog1" />
+              <div class="bg">
+                <p>How to get your first 100 users</p>
               </div>
-            </div>
-            <div class="author">
-              <img src="images/testimonials/testimonial3.jpg" class="pic" alt="testimonial3" />
-              <div class="name">John McClane</div>
-              <div class="company">Microsoft</div>
-            </div>
+            </a>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="testimonial">
-            <div class="quote">
-              This thing is one of those tools that everybody should be using. I really like it and with this ease to use, you can kickstart your projects and apps and just focus on your business!
-              <div class="arrow-down">
-                <div class="arrow"></div>
-                <div class="arrow-border"></div>
+          <div class="col-md-4">
+            <a class="pic" href="blogpost.html">
+              <img src="images/blog2.png" class="img-fluid" alt="blog2" />
+              <div class="bg">
+                <p>How to develop scalable Rails apps</p>
               </div>
-            </div>
-            <div class="author">
-              <img src="images/testimonials/testimonial2.jpg" class="pic" alt="testimonial2" />
-              <div class="name">Carl Jones</div>
-              <div class="company">Pixar Co.</div>
-            </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="pic" href="blogpost.html">
+              <img src="images/blog3.png" class="img-fluid" alt="blog3" />
+              <div class="bg">
+                <p>Enjoy your life at the beach</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="cta-section">
-    <p>
-      Start your free 14 day trial! 
-    </p>
-    <a href="signup.html">
-      Sign up for free
-    </a>
-  </div>
-
-  <div class="clients-section">
-    <div class="container">
-      <h3>Our Customers</h3>
-      <p>
-        These are some of our customers who have helped us by using our product.
-      </p>
-      <div class="logos">
-        <img src="images/logos/google.png">
-        <img src="images/logos/facebook.png">
-        <img src="images/logos/apple.png">
-        <img src="images/logos/stripe.png">
-        <img src="images/logos/yahoo.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="footer footer--light">
+  <div class="footer">
     <div class="container">
       <div class="row">
         <div class="col-md-3 menu">

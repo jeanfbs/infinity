@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-  <title>Infinity Tecnologia</title>
+  <title>React - Bootstrap Theme</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <!-- stylesheets -->
-  <link href="font-awesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
 
@@ -22,11 +20,11 @@
   <![endif]-->
 </head>
 <body>
-  <div class="navbar navbar-dark bg-transparent navbar-expand-lg" role="banner">
-    <div class="container no-override">
+  <div class="navbar navbar-light navbar-expand-lg" role="banner">
+    <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="images/logo-light.png" class="mr-2 img-fluid" />
-        Infinity
+        <img src="images/logo-dark.png" class="mr-2 img-fluid" />
+        React
       </a>
 
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
@@ -35,7 +33,7 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
+          <li class="nav-item active dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
               Home Pages
               <i class="ion-chevron-down"></i>
@@ -142,86 +140,128 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="docs/intro.html" class="nav-link nav-link--rounded">Docs</a>
+            <a class="nav-link nav-link--rounded" href="signup.html">Sign up</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="index-hero">
-    <div class="container">
-      <h1 class="hero-text cookye-text customFadeInDown">
-            Cookye
-      </h1>
-      <h1 class="hero-text customFadeInDown">
-        A solução ideal para seu negócio!
-      </h1>
-      <p class="sub-text customFadeInDown">
-        Se preocupe apenas com seus resultados, deixe o restante conosco. <br>
-        Um software desenvolvido com a mesma simplicidade de seu négocio
-      </p>
-      <div class="cta customFadeInDown">
-        <a href="signup.html" class="btn-shadow btn-shadow-cookye btn-shadow-lg">Saiba Mais</a>
+  <div class="slider-hero" id="slider">
+    <a class="slide-nav prev" href="#">Prev</a>
+    <a class="slide-nav next" href="#">Next</a>
+    <nav>
+      <a class="active" href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </nav>
+    <div class="slides">
+      <div class="slide first active">
+        <div class="bg"></div>
+        <div class="container customFadeInUp">
+          <h1 class="hero-text">Get the best technology videos online for free</h1>
+          <p class="sub-text">
+            Using simple HTML markup, get a complete existing website with great design up and running in no time.
+          </p>
+          <div class="video-wrapper">
+            <div class="video">
+              <img src="images/player.png" id="demo-player" alt="videoplayer" />
+            </div>
+          </div>
+        </div>
       </div>
-      <img src="images/index-device.png" class="device d-none d-lg-block">
+      <div class="slide second">
+        <div class="bg"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 info">
+              <h1 class="hero-text">
+                Take control of your business anywhere
+              </h1>
+              <p>
+                React is the best way to get a great design out of the box with lots of options for customization.
+              </p>
+              <div class="cta">
+                <a href="features.html" class="button-outline">
+                  TRY IT FREE
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 hidden-xs mobiles">
+              <img src="images/devices3.png" class="img-fluid customFadeInUp" alt="devices" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide third">
+        <div class="bg"></div>
+        <div class="container customFadeInDown">
+          <h1 class="hero-text">
+            Track any data point in your app in real time
+          </h1>
+          <p class="sub-text">
+            Try our 30 day trial so you can check out all the features that we offer, no contracts
+            or credit card required.
+          </p>
+          <div class="cta">
+            <a href="features.html" class="button-outline">See the tour</a>
+            <a href="signup.html" class="button">Sign up free</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-modal">
+      <div class="wrap">
+        <iframe src="https://player.vimeo.com/video/22439234" width="620" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
   <div class="features-section">
     <div class="container">
       <div class="header text-center">
-        <h2>Gerencie seu negócio de forma mais eficiente</h2>
-        <p class="mt-3">A Infinity oferece as tecnologias mais modernas para alavancar seus resultados</p>
+        <h2>Need an easy way to customize your site?</h2>
+        <p class="mt-3">React is perfect for novice developers and experts alike.</p>
       </div>
-      <br>
-      <br>
-      <div class="row text-center">
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-dollar-sign fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Financeiro</h4>
-              <p class="lead">Gerencie o financeiro de seu negócio de forma fácil, simplificada e com acompanhamento
-                Semanal, Mensal, Trimestral.
+      <div class="feature">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="info">
+              <h4 class="mt-lg-5">You don't need to have great technical experience to use your product.</h4>
+              <p>
+                Whether you want to fill this paragraph with some text like I'm doing right now, this place
+                is perfect to describe some features or anything you want - React has a complete solution for you.
               </p>
+            </div>
           </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                <i class="fas fa-utensils fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Cardápio</h4>
-              <p class="lead">
-                  Criamos um avançado controle e gestão de cardápio que suporta diferentes tipos de refeições.
-                  Crie cardápios de comida Japonesa, Massas, Prato Feito, Jantinha, Pizzas, Açaí, dentre outros...
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-paper-plane fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Pedidos</h4>
-              <p class="lead">
-                Com o mais completo controle de pedidos, você consegue acompanhar desde o início até o pagamento.
-                Monitore seus pedidos realizados pelo aplicativo.
-              </p>
-          </div>
-          <div class="col-md-3">
-              <div class="text-center">
-                  <i class="fas fa-boxes fa-4x text-primary"></i>
-              </div>
-              <br>
-              <h4 class="text-primary">Estoque</h4>
-              <p class="lead">
-                Nós te ajudamos a controlar seu estoque, conte com o recurso
-                <strong style="font-weight:600;">Controle Automático de Estoque</strong> para monitorar seus estoque
-                em tempo real.
-              </p>
+          <div class="col-md-6 text-center">
+            <img src="images/feature4.png" class="img-fluid" alt="feature1" />
           </div>
         </div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <div class="row">
+          <div class="col-md-6 order-md-2">
+            <div class="info">
+              <h4 class="mt-lg-4">A fully featured well design template that works.</h4>
+              <p>
+                You have complete control over the look & feel of your website, we offer the best quality so you
+                take your site up and running in no time.
+              </p>
+              <p>
+                Write some text here to explain the features of your site or application, it
+                has lots of uses.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1 text-center">
+            <img src="images/feature2.png" class="img-fluid" alt="feature2" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -345,28 +385,38 @@
     </div>
   </div>
 
-  <div class="slider-section">
+  <div class="features-hover-section">
     <div class="container">
-      <h3 class="header">Includes all pages that a complete theme should have</h3>
-
-      <div class="slide-wrapper">
-        <div class="slideshow">
-          <div class="btn-nav prev"></div>
-          <div class="btn-nav next"></div>
-          <div class="slide active">
-            <img src="images/slider/slide3.png" alt="slide3" />
+      <div class="images">
+        <img src="images/services5.png" class="img-fluid active" alt="services1" />
+        <img src="images/services6.png" class="img-fluid" alt="services2" />
+        <img src="images/services7.png" class="img-fluid" alt="services3" />
+      </div>
+      <div class="features">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature active">
+              <strong>Your own dashboard</strong>
+              <p>
+                You can work with international customers right out of the box while you can keep staying in your country.
+              </p>
+            </div>
           </div>
-          <div class="slide">
-            <img src="images/slider/slide4.png" alt="slide4" />
+          <div class="col-md-4">
+            <div class="feature">
+              <strong>Showcase your landing page</strong>
+              <p>
+                You can work with international customers right out of the box while you can keep staying in your country.
+              </p>
+            </div>
           </div>
-          <div class="slide">
-            <img src="images/slider/slide1.png" alt="slide1" />
-          </div>
-          <div class="slide">
-            <img src="images/slider/slide5.png" alt="slide5" />
-          </div>
-          <div class="slide">
-            <img src="images/slider/slide2.png" alt="slide2" />
+          <div class="col-md-4">
+            <div class="feature">
+              <strong>Offer pricing plans</strong>
+              <p>
+                You can work with international customers right out of the box while you can keep staying in your country.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -527,5 +577,107 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    $(function () {
+      var $navDots = $("#slider nav a")
+      var $next = $(".slide-nav.next");
+      var $prev = $(".slide-nav.prev");
+      var $slides = $("#slider .slides .slide");
+      var actualIndex = 0;
+      var swiping = false;
+      var interval;
+
+      $navDots.click(function (e) {
+        e.preventDefault();
+        if (swiping) { return; }
+        swiping = true;
+
+        actualIndex = $navDots.index(this);
+        updateSlides(actualIndex);
+      });
+
+      $next.click(function (e) {
+        e.preventDefault();
+        if (swiping) { return; }
+        swiping = true;
+
+        clearInterval(interval);
+        interval = null;
+
+        actualIndex++;
+        if (actualIndex >= $slides.length) {
+          actualIndex = 0;
+        }
+
+        updateSlides(actualIndex);
+      });
+
+      $prev.click(function (e) {
+        e.preventDefault();
+        if (swiping) { return; }
+        swiping = true;
+
+        clearInterval(interval);
+        interval = null;
+
+        actualIndex--;
+        if (actualIndex < 0) {
+          actualIndex = $slides.length - 1;
+        }
+
+        updateSlides(actualIndex);
+      });
+
+      function updateSlides(index) {
+        // update nav dots
+        $navDots.removeClass("active");
+        $navDots.eq(index).addClass("active");
+
+        // update slides
+        var $activeSlide = $("#slider .slide.active");
+        var $nextSlide = $slides.eq(index);
+
+        $activeSlide.fadeOut();
+        $nextSlide.addClass("next").fadeIn();
+        
+        setTimeout(function () {
+          $slides.removeClass("next").removeClass("active");
+          $nextSlide.addClass("active");
+          $activeSlide.removeAttr('style');
+          swiping = false;
+        }, 1000);
+      }
+
+      interval = setInterval(function () {
+        if (swiping) { return; }
+        swiping = true;
+
+        actualIndex++;
+        if (actualIndex >= $slides.length) {
+          actualIndex = 0;
+        }
+
+        updateSlides(actualIndex);
+      }, 5000);
+
+      // demo player
+      var $videoModal = $(".video-modal");
+      $("#demo-player").click(function () {
+        $videoModal.toggleClass("active");
+        clearInterval(interval);
+        interval = null;
+      });
+      $videoModal.click(function () {
+        $videoModal.removeClass("active");
+        setTimeout(function () {
+          $videoModal.find(".wrap").html('<iframe src="https://player.vimeo.com/video/22439234" width="620" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+        }, 1000);
+      })
+      $videoModal.find(".wrap").click(function (e) {
+        e.stopPropagation();
+      });
+    });
+  </script>
 </body>
 </html>
